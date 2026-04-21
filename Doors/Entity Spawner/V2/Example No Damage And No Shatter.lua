@@ -1,13 +1,11 @@
----====== Load spawner ======---
-
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
 
 local entity = spawner.Create({
 	Entity = {
-		Name = "Template Entity",
-		Asset = "https://github.com/RegularVynixu/Utilities/raw/main/Doors/Entity%20Spawner/Assets/Entities/Rush.rbxm",
+		Name = "Template Your Entity",
+		Asset = "https://github.com/RegularVynixu/Utilities/raw/main/Doors/Entity%20Spawner/Assets/Entities/Rush.rbxm", ---Use Your Model And Rbxassetid 
 		HeightOffset = 0
 	},
 	Lights = {
@@ -15,11 +13,11 @@ local entity = spawner.Create({
 			Enabled = true,
 			Duration = 1
 		},
-		Shatter = true,
+		Shatter = false,
 		Repair = false
 	},
 	Earthquake = {
-		Enabled = true
+		Enabled = false
 	},
 	CameraShake = {
 		Enabled = true,
@@ -39,7 +37,7 @@ local entity = spawner.Create({
 		Delay = 2
 	},
 	Damage = {
-		Enabled = true,
+		Enabled = false,
 		Range = 40,
 		Amount = 125
 	},
